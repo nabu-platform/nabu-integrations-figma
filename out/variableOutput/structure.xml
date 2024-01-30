@@ -1,0 +1,40 @@
+<structure name="anonymous">
+    <field name="status" type="java.lang.Long"/>
+    <field name="error" type="java.lang.Boolean"/>
+    <structure name="meta">
+        <structure name="variables">
+            <structure dynamicName="variableId" maxOccurs="unbounded" minOccurs="0" name="variables">
+                <field name="variableId" type="java.lang.String"/>
+                <field name="id" type="java.lang.String"/>
+                <field name="name" type="java.lang.String"/>
+                <field name="key" type="java.lang.String"/>
+                <field name="variableCollectionId" type="java.lang.String"/>
+                <field name="resolvedType" type="java.lang.String"/>
+                <structure name="valuesByMode">
+                    <field name="modeId" type="java.lang.String"/>
+                </structure>
+                <field name="remote" type="java.lang.Boolean"/>
+                <field name="description" type="java.lang.String"/>
+                <field name="hiddenFromPublishing" type="java.lang.Boolean"/>
+                <field maxOccurs="unbounded" name="scopes" type="java.lang.String"/>
+                <field name="codeSyntax" type="java.lang.String"/>
+            </structure>
+        </structure>
+        <structure name="variableCollections">
+            <structure dynamicName="variableCollectionId" maxOccurs="unbounded" minOccurs="0" name="variableCollections">
+                <field name="variableCollectionId" type="java.lang.String"/>
+                <field name="id" type="java.lang.String"/>
+                <field name="name" type="java.lang.String"/>
+                <field name="key" type="java.lang.String"/>
+                <structure maxOccurs="unbounded" name="modes">
+                    <field name="modeId" type="java.lang.String"/>
+                    <field name="name" type="java.lang.String"/>
+                </structure>
+                <field name="defaultModeId" type="java.lang.String"/>
+                <field name="remote" type="java.lang.String"/>
+                <field name="hiddenFromPublishing" type="java.lang.String"/>
+                <field maxOccurs="unbounded" name="variableIds" type="java.lang.String"/>
+            </structure>
+        </structure>
+    </structure>
+</structure>

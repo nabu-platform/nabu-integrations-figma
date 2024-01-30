@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restClient>
+    <method>GET</method>
+    <path>/v1/files/{fileKey}/variables/local</path>
+    <output>nabu.integrations.figma.out.variableOutput</output>
+    <lenient>true</lenient>
+    <ignoreRootIfArrayWrapper>true</ignoreRootIfArrayWrapper>
+    <endpoint>nabu.integrations.figma.out.endpoint</endpoint>
+</restClient>

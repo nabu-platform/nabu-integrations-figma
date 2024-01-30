@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restEndpoint>
+    <apiHeaderName>X-Figma-Token</apiHeaderName>
+    <gzip>true</gzip>
+    <host>api.figma.com</host>
+    <omitContentLengthIfEmpty>true</omitContentLengthIfEmpty>
+    <requestType>JSON</requestType>
+    <responseType>JSON</responseType>
+    <secure>true</secure>
+</restEndpoint>
